@@ -1,0 +1,18 @@
+{
+  "name": "nbib",
+  "version": "1.0.0",
+  "description": "a tool for converting from the nbib format (alternative to the .bib bibtex format)",
+  "main": "src/index.js",
+  "author": "Malte Rosenbjerg",
+  "license": "MIT",
+  "dependencies": {
+    "rollup": "^0.66.3",
+    "rollup-plugin-pegjs": "^2.1.3"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js --environment NODE_ENV:production",
+    "dev": "rollup --watch --config rollup.config.js --environment NODE_ENV:development",
+	"player": "electron ./electron-player",
+	"editor": "electron ./electron-editor"
+  }
+}
