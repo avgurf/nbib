@@ -5,7 +5,7 @@ import parser from './grammar.pegjs';
 const readfile = util.promisify(fs.readFile);
 const writefile = util.promisify(fs.writeFile);
 
-const formatEntry = entryNode => `@${entryNode.type}{${entryNode.label},\n${entryNode.fields.map(formatField).join("\n")}\n}`;
+const formatEntry = entryNode => `@${entryNode.type}{${entryNode.label},\n${entryNode.fields.map(formatField).join(",\n")}\n}`;
 
 const formatField = fieldNode => ` ${fieldNode.type} = {${fieldNode.value}}`;
 

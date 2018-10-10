@@ -12,7 +12,6 @@
   "scripts": {
     "build": "rollup --config rollup.config.js --environment NODE_ENV:production",
     "dev": "rollup --watch --config rollup.config.js --environment NODE_ENV:development",
-	"player": "electron ./electron-player",
-	"editor": "electron ./electron-editor"
+	"run": "node build"
   }
 }
