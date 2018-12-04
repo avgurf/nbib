@@ -9,16 +9,31 @@ and outputs a .bib file containing the normalized (and sorted) bibliography entr
 __Example:__
 ```
 online: gamasutra:c++functional
-    Title     = In-depth: Functional programming in C++
-    Author    = John Carmack
-    Publisher = Gamasutra
-    Pages     = 1
-    Language  = English
-    Year      = 2012
-    Month     = 4
+    title     = In-depth: Functional programming in C++
+    author    = John Carmack
+    publisher = Gamasutra
+    pages     = 1
+    language  = English
+    year      = 2012
+    month     = 4
     url       = https://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php
     urldate   = 2018-09-21
 ```
+are converted to:
+```
+@online{gamasutra:c++functional,
+ title     = {In-depth: Functional programming in C++},
+ author    = {John Carmack},
+ publisher = {Gamasutra},
+ pages     = {1},
+ language  = {English},
+ year      = {2012},
+ month     = {4},
+ url       = {https://www.gamasutra.com/view/news/169296/Indepth_Functional_programming_in_C.php},
+ urldate   = {2018-09-21}
+}
+```
+
 
 The entry type and entry label must be in the format `type: label` with a line break after the label, and then at least one field.
 
